@@ -1,0 +1,30 @@
+# Visual Studio
+.vs/
+*.user
+*.suo
+
+# Build output
+bin/
+obj/
+
+# Test results
+TestResults/
+*.trx
+
+# Logs
+Logs/
+*.log
+
+# NuGet
+*.nupkg
+packages/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# User-specific solution files
+*.slnLaunch.user
+
+# Environment / local configuration
+appsettings.Development.json

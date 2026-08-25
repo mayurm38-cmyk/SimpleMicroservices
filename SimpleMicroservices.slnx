@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="EmployeeService.Tests/EmployeeService.Tests.csproj" Id="00c93c52-d6e9-48a8-a922-f898c8feaabc" />
+  <Project Path="EmployeeService/EmployeeService.csproj" />
+  <Project Path="NotificationService/NotificationService.csproj" Id="01d8bdea-ccf7-40f1-8412-0204e2860288" />
+</Solution>
