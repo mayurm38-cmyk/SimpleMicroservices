@@ -7,6 +7,7 @@ namespace NotificationService.Services
 {
     public class EmailService
     {
+        // Email notification service
         private readonly IConfiguration _configuration;
 
         public EmailService(IConfiguration configuration)
