@@ -7,6 +7,7 @@ namespace NotificationService.Services
 {
     public class EmailService
     {
+        // Email notification service
         private readonly IConfiguration _configuration;
 
         public EmailService(IConfiguration configuration)
@@ -60,7 +61,7 @@ namespace NotificationService.Services
 
             var username = _configuration["Email:Username"]
                 ?? throw new InvalidOperationException(
-                    "Email:Username is missing.");
+                    "Email:Username is missing");
 
             var password = _configuration["Email:Password"]
                 ?? throw new InvalidOperationException(

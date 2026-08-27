@@ -61,7 +61,7 @@ namespace EmployeeService.Controllers
 
             if (employee == null)
             {
-                return NotFound("Employee not found");
+                return NotFound("Employee not found.");
             }
 
             return Ok(employee);
