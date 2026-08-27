@@ -25,7 +25,7 @@ namespace EmployeeService.Controllers
             if (request.Username != "admin" ||
                 request.Password != "12345")
             {
-                return Unauthorized("Invalid username or password");
+                return Unauthorized("Invalid username or password.");
             }
 
             var claims = new[]
