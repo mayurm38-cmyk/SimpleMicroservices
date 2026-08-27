@@ -47,7 +47,7 @@ jobs:
       uses: azure/login@v2
       with:
         client-id: ${{ vars.employee_api_mayur_CLIENT_ID_F5D7 }}
-        creds: ${{ secrets.AZURE_CLIENT_SECRET }}
+        creds: ${{ secrets.AZURE_CREDENTIALS }}
         tenant-id: ${{ vars.employee_api_mayur_TENANT_ID_51B2 }}
         subscription-id: ${{ vars.employee_api_mayur_SUBSCRIPTION_ID_51B2 }}
     - name: Deploy to Azure WebApp
