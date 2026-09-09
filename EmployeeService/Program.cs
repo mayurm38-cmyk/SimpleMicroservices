@@ -62,11 +62,6 @@ builder.Services.AddScoped<IKafkaProducer, KafkaProducer>();
 
 builder.Services.AddHostedService<KafkaConsumer>();
 
-builder.Services.AddSingleton<JobService>();
-builder.Services.AddSingleton<IJobService>(sp =>
-    sp.GetRequiredService<JobService>());
-
-builder.Services.AddHostedService<JobBackgroundService>();
 
 builder.Services.AddScoped<
     IEmployeeService,
