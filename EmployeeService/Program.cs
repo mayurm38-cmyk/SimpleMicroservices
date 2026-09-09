@@ -10,7 +10,6 @@ using Microsoft.OpenApi;
 using Serilog;
 using System.Reflection;
 using System.Text;
-using EmployeeService.Kafka;
 
 
 
@@ -62,6 +61,12 @@ builder.Services.AddScoped<IEmployeeRepository, EmployeeRepository>();
 builder.Services.AddScoped<IKafkaProducer, KafkaProducer>();
 
 builder.Services.AddHostedService<KafkaConsumer>();
+
+builder.Services.AddSingleton<JobService>();
+builder.Services.AddSingleton<IJobService>(sp =>
+    sp.GetRequiredService<JobService>());
+
+builder.Services.AddHostedService<JobBackgroundService>();
 
 builder.Services.AddScoped<
     IEmployeeService,
